@@ -263,11 +263,12 @@ const DATA = {
   ],
 
   stores: [
-    { name: "Casa Shopping", image: "/images/products/lojas/casa-shopping.avif" },
-    { name: "Casa & Gourmet", image: "/images/products/lojas/casa-e-gourmet.avif" },
-    { name: "Plaza Shopping", image: "/images/products/lojas/plaza-shopping.avif" },
-    { name: "Itaipava", image: "/images/products/lojas/itaipaiva.webp" },
-    { name: "Icaraí", image: "/images/products/lojas/loja-icarai.jpg" }
+    { name: "Casa Shopping", image: "/images/products/lojas/casa-shopping.avif", whatsapp: "5521964394794", maps: "https://g.co/kgs/dYAZhgd" },
+    { name: "Shopping Tijuca", image: "/images/products/lojas/shopping-tijuca.avif", whatsapp: "5521995225801", maps: "https://g.co/kgs/8B5qzqq" },
+    { name: "Plaza Shopping", image: "/images/products/lojas/plaza-shopping.avif", whatsapp: "5521964025277", maps: "https://g.co/kgs/AQJrYFq" },
+    { name: "Itaipava", image: "/images/products/lojas/itaipaiva.webp", whatsapp: "5521967260765", maps: "https://g.co/kgs/ge4RUX2" },
+    { name: "Botafogo", image: "/images/products/lojas/botafogo.avif", whatsapp: "5521996077201", maps: "https://g.co/kgs/tHMjw5x" },
+    { name: "Icaraí", image: "/images/products/lojas/icarai.avif", whatsapp: "5521996439963", maps: "https://g.co/kgs/YS84pNe" }
   ],
 
   reviews: [
