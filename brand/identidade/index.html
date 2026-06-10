@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Identidade Visual - Studio do Sono Brandbook</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-primary': '#507386',
+            'brand-secondary': '#6b8796',
+            'brand-bg': '#F4EFEB',
+            'brand-text': '#303D45',
+            'brand-muted': '#828B8F',
+          },
+          fontFamily: {
+            'sans': ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen bg-gray-50 font-sans text-brand-text antialiased">
+
+<!-- Brandbook Header -->
+<header class="bg-brand-primary text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <a href="/" class="text-white/80 hover:text-white transition-colors">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+      </a>
+      <div>
+        <h1 class="text-xl font-semibold">Studio do Sono</h1>
+        <p class="text-white/70 text-sm">Brandbook & Design System</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <div class="flex flex-col md:flex-row gap-8">
+
+    <!-- Sidebar -->
+    <aside class="w-full md:w-56 shrink-0">
+      <nav class="flex flex-col gap-1">
+        <a href="/brand/identidade/" class="flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-sm bg-white shadow-sm text-brand-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.93 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.27-.38-.62-.38-1 0-.83.67-1.5 1.5-1.5H16c3.31 0 6-2.69 6-6 0-5.5-4.5-10-10-10z"/></svg>
+          Identidade Visual
+        </a>
+        <a href="/brand/design-system/" class="flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-sm text-gray-600 hover:bg-white hover:text-brand-primary transition-colors">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M9 3v18"/><path d="M3 9h18"/></svg>
+          Design System
+        </a>
+        <a href="/brand/social/" class="flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-sm text-gray-600 hover:bg-white hover:text-brand-primary transition-colors">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg>
+          Social Media
+        </a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 min-w-0">
+
+      <!-- Identidade Visual Section -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-semibold text-brand-primary mb-4">Identidade Visual</h2>
+        <p class="text-gray-500 leading-relaxed max-w-2xl">A identidade visual da Studio do Sono transmite sofisticação, conforto e bem-estar. Nossa paleta de cores e elementos visuais foram cuidadosamente escolhidos para refletir a essência da marca: tranquilidade, elegância e qualidade premium em produtos para o sono.</p>
+      </section>
+
+      <!-- Assinatura de Marca -->
+      <section class="mb-16">
+        <h3 class="text-2xl font-semibold text-brand-primary mb-6">Assinatura de Marca</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Primary Logo on white -->
+          <div class="bg-white rounded-2xl p-12 border border-gray-100 flex flex-col items-center gap-4">
+            <div class="flex-1 flex items-center justify-center min-h-[160px]">
+              <img src="https://framerusercontent.com/images/iHbLTZPNtOHKKk7NI7ePjcdEUFA.png" alt="Logo Primary" class="h-16 w-auto object-contain">
+            </div>
+            <p class="text-sm font-medium text-gray-400">Primary Logo</p>
+          </div>
+          <!-- Negative Logo on brand-primary bg -->
+          <div class="bg-brand-primary rounded-2xl p-12 border border-brand-primary flex flex-col items-center gap-4">
+            <div class="flex-1 flex items-center justify-center min-h-[160px]">
+              <img src="https://framerusercontent.com/images/PzX3qrJBbGfpsOPkUcjSGMDElU.png" alt="Logo Negative" class="h-16 w-auto object-contain">
+            </div>
+            <p class="text-sm font-medium text-white/60">Negative Logo</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Paleta de Cores -->
+      <section>
+        <h3 class="text-2xl font-semibold text-brand-primary mb-6">Paleta de Cores</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Brand Primary -->
+          <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+            <div class="h-32" style="background:#507386"></div>
+            <div class="bg-white p-4 flex flex-col gap-1">
+              <p class="font-semibold text-gray-800">Brand Primary</p>
+              <p class="text-sm text-gray-500">#507386</p>
+              <p class="text-xs text-gray-400">RGB: 80, 115, 134</p>
+            </div>
+          </div>
+          <!-- Brand Secondary -->
+          <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+            <div class="h-32" style="background:#6B8796"></div>
+            <div class="bg-white p-4 flex flex-col gap-1">
+              <p class="font-semibold text-gray-800">Brand Secondary</p>
+              <p class="text-sm text-gray-500">#6B8796</p>
+              <p class="text-xs text-gray-400">RGB: 107, 135, 150</p>
+            </div>
+          </div>
+          <!-- Background Muted -->
+          <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+            <div class="h-32" style="background:#F4EFEB"></div>
+            <div class="bg-white p-4 flex flex-col gap-1">
+              <p class="font-semibold text-gray-800">Background Muted</p>
+              <p class="text-sm text-gray-500">#F4EFEB</p>
+              <p class="text-xs text-gray-400">RGB: 244, 239, 235</p>
+            </div>
+          </div>
+          <!-- Text Primary -->
+          <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+            <div class="h-32" style="background:#303D45"></div>
+            <div class="bg-white p-4 flex flex-col gap-1">
+              <p class="font-semibold text-gray-800">Text Primary</p>
+              <p class="text-sm text-gray-500">#303D45</p>
+              <p class="text-xs text-gray-400">RGB: 48, 61, 69</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<script src="/js/data.js?v=1780480349"></script>
+<script src="/js/main.js?v=1780480349"></script>
+</body>
+</html>

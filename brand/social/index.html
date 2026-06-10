@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media - Studio do Sono Brandbook</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-primary': '#507386',
+            'brand-secondary': '#6b8796',
+            'brand-bg': '#F4EFEB',
+            'brand-text': '#303D45',
+            'brand-muted': '#828B8F',
+          },
+          fontFamily: {
+            'sans': ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen bg-gray-50 font-sans text-brand-text antialiased">
+
+<!-- Brandbook Header -->
+<header class="bg-brand-primary text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <a href="/" class="text-white/80 hover:text-white transition-colors">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+      </a>
+      <div>
+        <h1 class="text-xl font-semibold">Studio do Sono</h1>
+        <p class="text-white/70 text-sm">Brandbook & Design System</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <div class="flex flex-col md:flex-row gap-8">
+
+    <!-- Sidebar -->
+    <aside class="w-full md:w-56 shrink-0">
+      <nav class="flex flex-col gap-1">
+        <a href="/brand/identidade/" class="flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-sm text-gray-600 hover:bg-white hover:text-brand-primary transition-colors">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.93 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.27-.38-.62-.38-1 0-.83.67-1.5 1.5-1.5H16c3.31 0 6-2.69 6-6 0-5.5-4.5-10-10-10z"/></svg>
+          Identidade Visual
+        </a>
+        <a href="/brand/design-system/" class="flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-sm text-gray-600 hover:bg-white hover:text-brand-primary transition-colors">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M9 3v18"/><path d="M3 9h18"/></svg>
+          Design System
+        </a>
+        <a href="/brand/social/" class="flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-sm bg-white shadow-sm text-brand-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg>
+          Social Media
+        </a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 min-w-0">
+      <h2 class="text-3xl font-semibold text-brand-primary mb-8">Social Media</h2>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+        <!-- Post Estático -->
+        <div class="max-w-[400px]">
+          <h3 class="text-lg font-semibold text-gray-600 mb-4">Post Estático</h3>
+          <div class="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
+            <!-- Profile Header -->
+            <div class="flex items-center gap-3 p-3">
+              <div class="w-8 h-8 rounded-full bg-gradient-to-br from-brand-primary to-brand-secondary flex items-center justify-center text-white text-xs font-bold">S</div>
+              <div class="flex-1">
+                <p class="text-sm font-semibold text-gray-900">studiodosono</p>
+                <p class="text-xs text-gray-500">Studio do Sono</p>
+              </div>
+              <button class="text-gray-500">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
+              </button>
+            </div>
+            <!-- Image -->
+            <div class="aspect-square bg-gray-100 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&q=80&w=800" alt="Bedroom" class="w-full h-full object-cover">
+            </div>
+            <!-- Actions -->
+            <div class="p-3">
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-4">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                </div>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>
+              </div>
+              <p class="text-sm font-semibold mb-1">128 curtidas</p>
+              <p class="text-sm"><span class="font-semibold">studiodosono</span> Transforme suas noites com o máximo em conforto e qualidade. Conheça nossa coleção de colchões premium. <span class="text-blue-500">#studiodosono</span> <span class="text-blue-500">#sonodequalidade</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post Carrossel -->
+        <div class="max-w-[400px]">
+          <h3 class="text-lg font-semibold text-gray-600 mb-4">Post Carrossel</h3>
+          <div class="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
+            <!-- Profile Header -->
+            <div class="flex items-center gap-3 p-3">
+              <div class="w-8 h-8 rounded-full bg-gradient-to-br from-brand-primary to-brand-secondary flex items-center justify-center text-white text-xs font-bold">S</div>
+              <div class="flex-1">
+                <p class="text-sm font-semibold text-gray-900">studiodosono</p>
+                <p class="text-xs text-gray-500">Studio do Sono</p>
+              </div>
+              <button class="text-gray-500">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
+              </button>
+            </div>
+            <!-- Carousel Image with overlay -->
+            <div class="aspect-square bg-gray-100 relative overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&q=80&w=800" alt="Pillow" class="w-full h-full object-cover">
+              <!-- Gradient overlay -->
+              <div class="absolute inset-0 bg-gradient-to-b from-black/5 to-black/50 flex flex-col items-center justify-end p-6">
+                <p class="text-white text-lg font-semibold text-center mb-4 drop-shadow-lg">Por que escolher um travesseiro cervical?</p>
+                <span class="bg-white/20 backdrop-blur-sm text-white text-xs font-medium px-3 py-1 rounded-full">1/3</span>
+              </div>
+            </div>
+            <!-- Actions -->
+            <div class="p-3">
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-4">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                </div>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>
+              </div>
+              <p class="text-sm font-semibold mb-1">95 curtidas</p>
+              <p class="text-sm"><span class="font-semibold">studiodosono</span> O travesseiro certo faz toda a diferença na sua qualidade de sono. Arraste para o lado e descubra nossas dicas! <span class="text-blue-500">#travesseirocervical</span> <span class="text-blue-500">#higienedosono</span></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="/js/data.js?v=1780480349"></script>
+<script src="/js/main.js?v=1780480349"></script>
+</body>
+</html>

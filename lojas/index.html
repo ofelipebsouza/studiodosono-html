@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lojas - Studio do Sono</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-primary': '#507386',
+            'brand-secondary': '#6b8796',
+            'brand-bg': '#F4EFEB',
+            'brand-text': '#303D45',
+            'brand-muted': '#828B8F',
+          },
+          fontFamily: {
+            'sans': ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen bg-brand-bg font-sans text-brand-text antialiased flex flex-col">
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 bg-white border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      <a href="/" class="flex-shrink-0">
+        <img src="https://framerusercontent.com/images/iHbLTZPNtOHKKk7NI7ePjcdEUFA.png" alt="Studio do Sono" class="h-10 w-auto object-contain">
+      </a>
+      <nav class="hidden md:flex items-center gap-1 bg-gray-50/50 p-1.5 rounded-full border border-gray-100">
+        <a href="/" class="px-4 py-2 rounded-full text-sm font-medium text-gray-600 hover:text-brand-primary hover:bg-white transition-colors">Home</a>
+        <a href="/#quem-somos" class="px-4 py-2 rounded-full text-sm font-medium text-gray-600 hover:text-brand-primary hover:bg-white transition-colors">Quem Somos</a>
+        <div class="relative group">
+          <a href="/produtos/" class="px-4 py-2 flex items-center gap-1.5 rounded-full text-sm font-medium text-gray-600 hover:text-brand-primary hover:bg-white transition-colors">
+            Produtos
+            <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </a>
+          <div class="absolute top-full left-0 pt-3 w-[220px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-2 group-hover:translate-y-0">
+            <div class="bg-white rounded-2xl p-2 shadow-xl border border-gray-100 flex flex-col gap-1">
+              <a href="/produtos/colchoes/" class="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-600 hover:bg-brand-bg hover:text-brand-primary transition-colors font-medium text-[15px]">
+                <svg class="w-5 h-5 text-slate-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m16.5 9.4-9-5.19M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.29 7 12 12 20.71 7"/><line x1="12" x2="12" y1="22" y2="12"/></svg> Colchões
+              </a>
+              <a href="/produtos/poltronas/" class="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-600 hover:bg-brand-bg hover:text-brand-primary transition-colors font-medium text-[15px]">
+                <svg class="w-5 h-5 text-slate-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 18a2 2 0 0 0 2-2v-1a2 2 0 0 1 2-2h.5a1.5 1.5 0 0 0 0-3H20a2 2 0 0 0-2 2v1"/><path d="M7 18a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2h-.5a1.5 1.5 0 0 1 0-3H4a2 2 0 0 1 2 2v1"/><path d="M6 18h12"/><path d="M6 18v-6a6 6 0 0 1 12 0v6"/></svg> Poltronas
+              </a>
+              <a href="/produtos/camas/" class="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-600 hover:bg-brand-bg hover:text-brand-primary transition-colors font-medium text-[15px]">
+                <svg class="w-5 h-5 text-slate-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg> Camas
+              </a>
+              <a href="/produtos/acessorios/" class="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-600 hover:bg-brand-bg hover:text-brand-primary transition-colors font-medium text-[15px]">
+                <svg class="w-5 h-5 text-slate-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z"/><path d="M7 7h.01"/></svg> Acessórios
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="/blog/" class="px-4 py-2 rounded-full text-sm font-medium text-gray-600 hover:text-brand-primary hover:bg-white transition-colors">Notícias</a>
+        <a href="/lojas/" class="px-4 py-2 rounded-full text-sm font-medium bg-white shadow-sm text-brand-primary">Lojas</a>
+        <a href="/#faq" class="px-4 py-2 rounded-full text-sm font-medium text-gray-600 hover:text-brand-primary hover:bg-white transition-colors">FAQ</a>
+        <a href="/contato/" class="px-4 py-2 rounded-full text-sm font-medium text-gray-600 hover:text-brand-primary hover:bg-white transition-colors">Trabalhe Conosco</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <div class="hidden md:block" data-search-container>
+          <div class="flex items-center bg-gray-50 border border-gray-100 rounded-full px-3 py-2 focus-within:ring-2 focus-within:ring-brand-primary/20">
+            <svg class="w-4 h-4 text-gray-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="text" placeholder="Buscar produtos..." class="bg-transparent border-none outline-none text-sm px-2 w-[140px] lg:w-[200px] text-gray-700 placeholder:text-gray-400">
+            <div data-search-results class="absolute top-full right-0 mt-2 w-[300px] sm:w-[400px] bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden z-50" style="display:none"></div>
+          </div>
+        </div>
+        <button data-mobile-menu-btn class="md:hidden p-2 text-gray-600">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div data-mobile-menu class="md:hidden bg-white border-b border-gray-100 absolute w-full left-0 top-full" style="display:none">
+    <div class="px-4 py-3 border-b border-gray-50" data-search-container>
+      <div class="flex items-center bg-gray-50 border border-gray-100 rounded-full px-3 py-2 w-full">
+        <svg class="w-4 h-4 text-gray-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" placeholder="Buscar produtos..." class="bg-transparent border-none outline-none text-sm px-2 w-full text-gray-700 placeholder:text-gray-400">
+        <div data-search-results class="absolute left-4 right-4 top-[52px] bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden z-50" style="display:none"></div>
+      </div>
+    </div>
+    <nav class="flex flex-col p-4 gap-2 shadow-lg">
+      <a href="/" class="px-4 py-3 rounded-xl hover:bg-gray-50 text-gray-700 font-medium">Home</a>
+      <a href="/#quem-somos" class="px-4 py-3 rounded-xl hover:bg-gray-50 text-gray-700 font-medium">Quem Somos</a>
+      <a href="/produtos/" class="px-4 py-3 rounded-xl hover:bg-gray-50 text-brand-primary font-bold">Produtos</a>
+      <div class="flex flex-col gap-1 pl-4">
+        <a href="/produtos/colchoes/" class="flex items-center gap-3 px-4 py-2.5 rounded-xl text-gray-600 hover:bg-gray-50 hover:text-brand-primary">
+          <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m16.5 9.4-9-5.19M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.29 7 12 12 20.71 7"/><line x1="12" x2="12" y1="22" y2="12"/></svg> Colchões
+        </a>
+        <a href="/produtos/poltronas/" class="flex items-center gap-3 px-4 py-2.5 rounded-xl text-gray-600 hover:bg-gray-50 hover:text-brand-primary">
+          <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 18a2 2 0 0 0 2-2v-1a2 2 0 0 1 2-2h.5a1.5 1.5 0 0 0 0-3H20a2 2 0 0 0-2 2v1"/><path d="M7 18a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2h-.5a1.5 1.5 0 0 1 0-3H4a2 2 0 0 1 2 2v1"/><path d="M6 18h12"/><path d="M6 18v-6a6 6 0 0 1 12 0v6"/></svg> Poltronas
+        </a>
+        <a href="/produtos/camas/" class="flex items-center gap-3 px-4 py-2.5 rounded-xl text-gray-600 hover:bg-gray-50 hover:text-brand-primary">
+          <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg> Camas
+        </a>
+        <a href="/produtos/acessorios/" class="flex items-center gap-3 px-4 py-2.5 rounded-xl text-gray-600 hover:bg-gray-50 hover:text-brand-primary">
+          <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z"/><path d="M7 7h.01"/></svg> Acessórios
+        </a>
+      </div>
+      <a href="/blog/" class="px-4 py-3 rounded-xl hover:bg-gray-50 text-gray-700 font-medium">Notícias</a>
+      <a href="/lojas/" class="px-4 py-3 rounded-xl hover:bg-gray-50 text-brand-primary font-bold">Lojas</a>
+      <a href="/#faq" class="px-4 py-3 rounded-xl hover:bg-gray-50 text-gray-700 font-medium">FAQ</a>
+      <a href="/contato/" class="px-4 py-3 rounded-xl hover:bg-gray-50 text-gray-700 font-medium">Trabalhe Conosco</a>
+    </nav>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main class="flex-1">
+  <section class="py-16 md:py-24 px-4">
+    <div class="max-w-6xl mx-auto text-center mb-16">
+      <h1 class="text-3xl md:text-5xl font-semibold text-brand-primary mb-4">Encontre a Studio do Sono mais próxima de você</h1>
+      <p class="text-lg md:text-xl text-brand-muted mb-8">Estamos nos principais shoppings e centros comerciais do Rio de Janeiro.</p>
+      <a href="/produtos/" class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl font-medium bg-brand-primary text-white hover:bg-brand-primary/90 shadow-sm transition-all duration-200">
+        Descubra nossos produtos
+        <svg class="w-5 h-5 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+      </a>
+    </div>
+
+    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Casa Shopping -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img src="/images/products/lojas/casa-shopping.avif" alt="Casa Shopping" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="p-6 flex flex-col gap-4">
+          <h3 class="text-xl font-semibold text-brand-primary">Casa Shopping</h3>
+          <div class="flex flex-col gap-3 mt-2">
+            <a href="https://wa.me/5521964037837" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 w-full py-3 px-4 rounded-xl font-medium text-white transition-colors shadow-sm" style="background:#5bc565">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 2.056c-5.5 0-9.98 4.479-9.98 9.98 0 1.76.452 3.475 1.312 4.985L2.05 21.942l4.897-1.282c1.474.779 3.14 1.192 4.86 1.192h.004c5.498 0 9.978-4.48 9.978-9.981 0-2.667-1.037-5.174-2.92-7.062a9.92 9.92 0 00-7.05-2.93zM12.03 20.17c-1.488 0-2.936-.398-4.208-1.152l-.3-.178-3.125.82.834-3.047-.196-.312c-.828-1.315-1.266-2.837-1.266-4.405 0-4.57 3.722-8.293 8.293-8.293 2.215 0 4.298.863 5.865 2.43a8.232 8.232 0 012.43 5.865c-.001 4.571-3.724 8.294-8.295 8.294h-.002z"/></svg>
+              WhatsApp
+            </a>
+            <a href="#" class="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl font-medium bg-brand-primary text-white hover:bg-brand-primary/90 transition-colors shadow-sm">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Ver localização
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Casa & Gourmet -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img src="/images/products/lojas/casa-e-gourmet.avif" alt="Casa & Gourmet" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="p-6 flex flex-col gap-4">
+          <h3 class="text-xl font-semibold text-brand-primary">Casa & Gourmet</h3>
+          <div class="flex flex-col gap-3 mt-2">
+            <a href="https://wa.me/5521964037837" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 w-full py-3 px-4 rounded-xl font-medium text-white transition-colors shadow-sm" style="background:#5bc565">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 2.056c-5.5 0-9.98 4.479-9.98 9.98 0 1.76.452 3.475 1.312 4.985L2.05 21.942l4.897-1.282c1.474.779 3.14 1.192 4.86 1.192h.004c5.498 0 9.978-4.48 9.978-9.981 0-2.667-1.037-5.174-2.92-7.062a9.92 9.92 0 00-7.05-2.93zM12.03 20.17c-1.488 0-2.936-.398-4.208-1.152l-.3-.178-3.125.82.834-3.047-.196-.312c-.828-1.315-1.266-2.837-1.266-4.405 0-4.57 3.722-8.293 8.293-8.293 2.215 0 4.298.863 5.865 2.43a8.232 8.232 0 012.43 5.865c-.001 4.571-3.724 8.294-8.295 8.294h-.002z"/></svg>
+              WhatsApp
+            </a>
+            <a href="#" class="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl font-medium bg-brand-primary text-white hover:bg-brand-primary/90 transition-colors shadow-sm">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Ver localização
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plaza Shopping -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img src="/images/products/lojas/plaza-shopping.avif" alt="Plaza Shopping" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="p-6 flex flex-col gap-4">
+          <h3 class="text-xl font-semibold text-brand-primary">Plaza Shopping</h3>
+          <div class="flex flex-col gap-3 mt-2">
+            <a href="https://wa.me/5521964037837" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 w-full py-3 px-4 rounded-xl font-medium text-white transition-colors shadow-sm" style="background:#5bc565">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 2.056c-5.5 0-9.98 4.479-9.98 9.98 0 1.76.452 3.475 1.312 4.985L2.05 21.942l4.897-1.282c1.474.779 3.14 1.192 4.86 1.192h.004c5.498 0 9.978-4.48 9.978-9.981 0-2.667-1.037-5.174-2.92-7.062a9.92 9.92 0 00-7.05-2.93zM12.03 20.17c-1.488 0-2.936-.398-4.208-1.152l-.3-.178-3.125.82.834-3.047-.196-.312c-.828-1.315-1.266-2.837-1.266-4.405 0-4.57 3.722-8.293 8.293-8.293 2.215 0 4.298.863 5.865 2.43a8.232 8.232 0 012.43 5.865c-.001 4.571-3.724 8.294-8.295 8.294h-.002z"/></svg>
+              WhatsApp
+            </a>
+            <a href="#" class="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl font-medium bg-brand-primary text-white hover:bg-brand-primary/90 transition-colors shadow-sm">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Ver localização
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Itaipava -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img src="/images/products/lojas/itaipaiva.webp" alt="Itaipava" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="p-6 flex flex-col gap-4">
+          <h3 class="text-xl font-semibold text-brand-primary">Itaipava</h3>
+          <div class="flex flex-col gap-3 mt-2">
+            <a href="https://wa.me/5521964037837" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 w-full py-3 px-4 rounded-xl font-medium text-white transition-colors shadow-sm" style="background:#5bc565">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 2.056c-5.5 0-9.98 4.479-9.98 9.98 0 1.76.452 3.475 1.312 4.985L2.05 21.942l4.897-1.282c1.474.779 3.14 1.192 4.86 1.192h.004c5.498 0 9.978-4.48 9.978-9.981 0-2.667-1.037-5.174-2.92-7.062a9.92 9.92 0 00-7.05-2.93zM12.03 20.17c-1.488 0-2.936-.398-4.208-1.152l-.3-.178-3.125.82.834-3.047-.196-.312c-.828-1.315-1.266-2.837-1.266-4.405 0-4.57 3.722-8.293 8.293-8.293 2.215 0 4.298.863 5.865 2.43a8.232 8.232 0 012.43 5.865c-.001 4.571-3.724 8.294-8.295 8.294h-.002z"/></svg>
+              WhatsApp
+            </a>
+            <a href="#" class="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl font-medium bg-brand-primary text-white hover:bg-brand-primary/90 transition-colors shadow-sm">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Ver localização
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Icaraí -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img src="/images/products/lojas/loja-icarai.jpg" alt="Icaraí" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="p-6 flex flex-col gap-4">
+          <h3 class="text-xl font-semibold text-brand-primary">Icaraí</h3>
+          <div class="flex flex-col gap-3 mt-2">
+            <a href="https://wa.me/5521964037837" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 w-full py-3 px-4 rounded-xl font-medium text-white transition-colors shadow-sm" style="background:#5bc565">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 2.056c-5.5 0-9.98 4.479-9.98 9.98 0 1.76.452 3.475 1.312 4.985L2.05 21.942l4.897-1.282c1.474.779 3.14 1.192 4.86 1.192h.004c5.498 0 9.978-4.48 9.978-9.981 0-2.667-1.037-5.174-2.92-7.062a9.92 9.92 0 00-7.05-2.93zM12.03 20.17c-1.488 0-2.936-.398-4.208-1.152l-.3-.178-3.125.82.834-3.047-.196-.312c-.828-1.315-1.266-2.837-1.266-4.405 0-4.57 3.722-8.293 8.293-8.293 2.215 0 4.298.863 5.865 2.43a8.232 8.232 0 012.43 5.865c-.001 4.571-3.724 8.294-8.295 8.294h-.002z"/></svg>
+              WhatsApp
+            </a>
+            <a href="#" class="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl font-medium bg-brand-primary text-white hover:bg-brand-primary/90 transition-colors shadow-sm">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Ver localização
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-brand-primary text-white pt-20 mt-auto">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 pb-16 grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-8">
+    <div class="flex flex-col gap-6 lg:pr-8">
+      <a href="/">
+        <img src="images/logo-footer.png" alt="Studio do Sono" class="h-16 w-max object-contain" style="margin-left:-8px">
+      </a>
+      <p class="text-white/80 leading-relaxed text-sm">Há mais de 35 anos criando o quarto dos sonhos com as melhores marcas internacionais de colchões, camas e acessórios de sono.</p>
+    </div>
+    <div class="flex flex-col gap-6">
+      <h4 class="text-xl font-medium">Institucional</h4>
+      <nav class="flex flex-col gap-3 text-white/80">
+        <a href="/" class="hover:text-white hover:underline transition-colors w-fit">Home</a>
+        <a href="/#quem-somos" class="hover:text-white hover:underline transition-colors w-fit">Quem somos</a>
+        <a href="/produtos/" class="hover:text-white hover:underline transition-colors w-fit">Produtos</a>
+        <a href="/contato/" class="hover:text-white hover:underline transition-colors w-fit">Fale Conosco</a>
+      </nav>
+    </div>
+    <div class="flex flex-col gap-6">
+      <h4 class="text-xl font-medium">Links úteis</h4>
+      <nav class="flex flex-col gap-3 text-white/80">
+        <a href="/blog/" class="hover:text-white hover:underline transition-colors w-fit">Blog</a>
+        <a href="/lojas/" class="hover:text-white hover:underline transition-colors w-fit">Nossas Lojas</a>
+        <a href="/contato/" class="hover:text-white hover:underline transition-colors w-fit">Trabalhe conosco</a>
+        <a href="/brand/identidade/" class="hover:text-white hover:underline transition-colors w-fit">Brandbook</a>
+        <a href="/#faq" class="hover:text-white hover:underline transition-colors w-fit">FAQ</a>
+      </nav>
+    </div>
+  </div>
+  <div class="bg-[#4D626D] py-6 text-center">
+    <p class="text-white/90 text-sm">&copy; Studio do Sono. Todos os direitos reservados</p>
+  </div>
+</footer>
+
+<script src="/js/data.js?v=1780480349"></script>
+<script src="/js/main.js?v=1780480349"></script>
+</body>
+</html>

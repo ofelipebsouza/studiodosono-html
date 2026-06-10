@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design System - Studio do Sono Brandbook</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-primary': '#507386',
+            'brand-secondary': '#6b8796',
+            'brand-bg': '#F4EFEB',
+            'brand-text': '#303D45',
+            'brand-muted': '#828B8F',
+          },
+          fontFamily: {
+            'sans': ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen bg-gray-50 font-sans text-brand-text antialiased">
+
+<!-- Brandbook Header -->
+<header class="bg-brand-primary text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <a href="/" class="text-white/80 hover:text-white transition-colors">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+      </a>
+      <div>
+        <h1 class="text-xl font-semibold">Studio do Sono</h1>
+        <p class="text-white/70 text-sm">Brandbook & Design System</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <div class="flex flex-col md:flex-row gap-8">
+
+    <!-- Sidebar -->
+    <aside class="w-full md:w-56 shrink-0">
+      <nav class="flex flex-col gap-1">
+        <a href="/brand/identidade/" class="flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-sm text-gray-600 hover:bg-white hover:text-brand-primary transition-colors">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.93 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.27-.38-.62-.38-1 0-.83.67-1.5 1.5-1.5H16c3.31 0 6-2.69 6-6 0-5.5-4.5-10-10-10z"/></svg>
+          Identidade Visual
+        </a>
+        <a href="/brand/design-system/" class="flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-sm bg-white shadow-sm text-brand-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M9 3v18"/><path d="M3 9h18"/></svg>
+          Design System
+        </a>
+        <a href="/brand/social/" class="flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-sm text-gray-600 hover:bg-white hover:text-brand-primary transition-colors">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg>
+          Social Media
+        </a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 min-w-0">
+      <h2 class="text-3xl font-semibold text-brand-primary mb-8">Design System</h2>
+
+      <!-- Tab Navigation -->
+      <div class="flex gap-2 mb-8 bg-gray-100 p-1.5 rounded-2xl w-fit">
+        <button data-ds-tab="buttons" class="px-5 py-2.5 rounded-xl font-medium text-sm bg-white text-brand-primary shadow-sm transition-all">Buttons</button>
+        <button data-ds-tab="inputs" class="px-5 py-2.5 rounded-xl font-medium text-sm text-gray-500 transition-all">Inputs</button>
+        <button data-ds-tab="cards" class="px-5 py-2.5 rounded-xl font-medium text-sm text-gray-500 transition-all">Cards</button>
+        <button data-ds-tab="icons" class="px-5 py-2.5 rounded-xl font-medium text-sm text-gray-500 transition-all">Icons</button>
+      </div>
+
+      <!-- Buttons Tab -->
+      <div data-ds-content="buttons" class="bg-white rounded-2xl p-8 border border-gray-100 mb-8">
+        <h3 class="text-xl font-semibold text-brand-primary mb-2">Buttons</h3>
+        <p class="text-gray-500 text-sm mb-6">Botões principais e secundários do sistema.</p>
+
+        <div class="flex flex-col gap-8">
+          <!-- Primary Buttons -->
+          <div>
+            <h4 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">Primary Buttons</h4>
+            <div class="flex flex-wrap gap-4 items-center">
+              <button class="px-6 py-3 rounded-xl font-medium bg-brand-primary text-white shadow-sm">Primary</button>
+              <button class="px-6 py-3 rounded-xl font-medium bg-brand-primary text-white shadow-sm flex items-center gap-2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+                With Icon
+              </button>
+              <button class="px-6 py-3 rounded-xl font-medium bg-brand-primary/80 text-white shadow-sm cursor-default">Hover</button>
+            </div>
+          </div>
+
+          <!-- White Buttons on brand-primary bg -->
+          <div>
+            <h4 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">White Buttons (on dark bg)</h4>
+            <div class="flex flex-wrap gap-4 items-center bg-brand-primary rounded-2xl p-8">
+              <button class="px-6 py-3 rounded-xl font-medium bg-white text-brand-primary shadow-sm">White</button>
+              <button class="px-6 py-3 rounded-xl font-medium bg-white text-brand-primary shadow-sm flex items-center gap-2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+                With Icon
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Inputs Tab -->
+      <div data-ds-content="inputs" class="bg-white rounded-2xl p-8 border border-gray-100 mb-8" style="display:none">
+        <h3 class="text-xl font-semibold text-brand-primary mb-2">Inputs</h3>
+        <p class="text-gray-500 text-sm mb-6">Campos de formulário padrão do sistema.</p>
+
+        <div class="flex flex-col gap-6 max-w-md">
+          <!-- Text Input -->
+          <div class="flex flex-col gap-2">
+            <label class="text-sm font-medium text-gray-500">Text Input</label>
+            <input type="text" placeholder="Placeholder text..." class="w-full bg-gray-100/50 border border-gray-200/60 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-brand-primary/20 focus:border-brand-primary transition-all text-gray-700 placeholder:text-gray-400">
+          </div>
+
+          <!-- Select -->
+          <div class="flex flex-col gap-2">
+            <label class="text-sm font-medium text-gray-500">Select</label>
+            <div class="relative">
+              <select class="w-full bg-gray-100/50 border border-gray-200/60 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-brand-primary/20 focus:border-brand-primary transition-all text-gray-700 appearance-none pr-12">
+                <option>Selecione uma opção...</option>
+                <option>Opção 1</option>
+                <option>Opção 2</option>
+              </select>
+              <svg class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </div>
+          </div>
+
+          <!-- Error Staté -->
+          <div class="flex flex-col gap-2">
+            <label class="text-sm font-medium text-gray-500">Error State</label>
+            <input type="text" value="Invalid input" class="w-full bg-gray-100/50 border rounded-xl px-5 py-4 focus:outline-none transition-all text-gray-700" style="border-color:#ef4444">
+            <p class="text-sm" style="color:#ef4444">Este campo é obrigatório.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cards Tab -->
+      <div data-ds-content="cards" class="bg-white rounded-2xl p-8 border border-gray-100 mb-8" style="display:none">
+        <h3 class="text-xl font-semibold text-brand-primary mb-2">Cards</h3>
+        <p class="text-gray-500 text-sm mb-6">Exemplo de card de produto.</p>
+
+        <div class="max-w-sm">
+          <div class="bg-white rounded-3xl p-4 border border-gray-100 shadow-sm group flex flex-col gap-4">
+            <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-gray-50 flex items-center justify-center">
+              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&q=80&w=800" alt="Product" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="px-2 pb-2 flex flex-col gap-2">
+              <span class="text-gray-400 text-sm font-semibold uppercase tracking-wider">Categoria</span>
+              <h3 class="text-2xl font-black text-brand-primary leading-tight">Nome do Produto</h3>
+              <p class="text-gray-500 text-sm line-clamp-2">Descrição curta do produto com detalhes importantes sobre o mesmo.</p>
+              <button class="inline-flex items-center justify-center gap-2 w-full bg-brand-primary text-white py-3 px-4 rounded-xl text-sm font-semibold mt-2">
+                Ver Produto
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Icons Tab -->
+      <div data-ds-content="icons" class="bg-white rounded-2xl p-8 border border-gray-100 mb-8" style="display:none">
+        <h3 class="text-xl font-semibold text-brand-primary mb-2">Icons</h3>
+        <p class="text-gray-500 text-sm mb-6">Conjunto de ícones usados no sistema.</p>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <!-- CheckCircle -->
+          <div class="flex flex-col items-center gap-3 p-6 rounded-xl border border-gray-100 hover:border-brand-primary/30 transition-colors">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#507386" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+            <span class="text-sm font-medium text-gray-600">CheckCircle</span>
+          </div>
+          <!-- ArrowRight -->
+          <div class="flex flex-col items-center gap-3 p-6 rounded-xl border border-gray-100 hover:border-brand-primary/30 transition-colors">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#507386" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+            <span class="text-sm font-medium text-gray-600">ArrowRight</span>
+          </div>
+          <!-- Heart -->
+          <div class="flex flex-col items-center gap-3 p-6 rounded-xl border border-gray-100 hover:border-brand-primary/30 transition-colors">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#507386" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            <span class="text-sm font-medium text-gray-600">Heart</span>
+          </div>
+          <!-- Search -->
+          <div class="flex flex-col items-center gap-3 p-6 rounded-xl border border-gray-100 hover:border-brand-primary/30 transition-colors">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#507386" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <span class="text-sm font-medium text-gray-600">Search</span>
+          </div>
+          <!-- Star -->
+          <div class="flex flex-col items-center gap-3 p-6 rounded-xl border border-gray-100 hover:border-brand-primary/30 transition-colors">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" stroke="none" color="#507386"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span class="text-sm font-medium text-gray-600">Star</span>
+          </div>
+          <!-- Check -->
+          <div class="flex flex-col items-center gap-3 p-6 rounded-xl border border-gray-100 hover:border-brand-primary/30 transition-colors">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#507386" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+            <span class="text-sm font-medium text-gray-600">Check</span>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<script src="/js/data.js?v=1780480349"></script>
+<script src="/js/main.js?v=1780480349"></script>
+</body>
+</html>
